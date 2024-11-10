@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav a{
+            padding: 10px 12px ;
+            text-decoration: none;
+            background-color: #222;
+            color: #fff;
+        }
+        nav a:hover{
+            background-color: #fff;
+            color:black;
+        }
+        nav a:focus{
+            background-color: orange;
+            color: #222;
+        }
+        .container{
+            text-align: center;
+
+        }
+        .container div{
+            background-color: beigue;
+            padding: 20px;
+        }
+        .container div:target{
+            background-color: #222;
+            color: #fff;
+        }
+        input{
+            margin-top: 30px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+        input:hover{
+            background-color: rgb(255, 166, 0, 0.169);
+
+        }
+        input:focus{
+            border: 2px solid orangered;
+
+        }
+        input:active{
+            background-color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <center>
+        <h1>:focus & :target</h1>
+    </center>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="container">
+        <div id="home">
+            <h1>Home Section</h1>
+        </div>
+        <div id="about">
+            <h1>About Section</h1>
+        </div>
+        <div id="contact">
+            <h1>Contact Section</h1>
+        </div>
+    </section>
+</body>
+</html>

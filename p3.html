@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .search{
+            padding: 30px;
+            text-align: center;
+        }
+        .search input{
+            width: 50px;
+            border-radius: 100px;
+            padding:  5px 10px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            transition: 1s;
+        }
+        .search input:focus{
+           width: 300px;
+           border: 1px solid orangered;
+        }
+        form{
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0px 0px 10px #445;
+            font-family: sans-serif;
+            filter: blur(1px);
+        }
+        form input{
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+        form input:focus{
+            border-bottom: solid olivedrab;
+        }
+        form input:active{
+            border-bottom: 2px solid red;
+        }
+        
+        button{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: olivedrab;
+            color: #222;
+            border-radius: 3px;
+           cursor: pointer;
+           box-shadow: 3px 3px 0px #222;
+        }
+        button:active{
+            transform: scale(0.9) translateX(3px) translateY(3px);
+            box-sizing: none;
+        }
+        button:hover{
+            opacity: 0.9;
+        }
+        form:hover{
+            transform: scale(1.2);
+            opacity: 0.8;
+            filter: blur(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <input type="text" placeholder="Search here....">
+    </div>
+    <form>
+        <label for="">username</label>
+        <input type="text" placeholder="username">
+        <br>
+
+        <label for="">Email</label>
+        <input type="email" placeholder="email">
+        <br>
+        <button>Create account</button>
+    </form>
+</body>
+</html>

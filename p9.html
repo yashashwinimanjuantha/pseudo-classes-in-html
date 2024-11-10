@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: rgb(195, 211, 226);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px yellow;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label {
+    color: green;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>        <h1>Choose Your Favorite Fruit</h1>
+</center>
+
+        <form>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="fruit" value="Apple">
+                    Apple
+                </label>
+                <label>
+                    <input type="radio" name="fruit" value="Banana">
+                    Banana
+                </label>
+                <label>
+                    <input type="radio" name="fruit" value="Cherry">
+                    Cherry
+                </label>
+            </div>
+            <div class="result">
+                <p>You selected: <span id="selected-fruit">None</span></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

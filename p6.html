@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"]{
+            user-select: none;
+            position: relative;
+            width: 100px;
+            padding: 10px;
+            background-color: rgb(206, 206, 210);
+            appearance: none;
+            height: 50px;
+            border-radius: 100px;
+        }
+        input[type="checkbox"]:before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            background-color: #ccc;
+            position: absolute;
+            transition: 1s;
+        }
+        input[type="checkbox"]:checked::before{
+            background-color: green;
+            transform: translateX(50px);
+            background: url(https://cdn-icons-png.freepik.com/256/5610/5610944.png?ga=GA1.1.1761321312.1725603828&semt=ais_hybrid)no-repeat center;
+            background-size: cover;
+        }
+        input[type="checkbox"]:checked{
+            background-color: rgb(79, 203, 79);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     input{
+        padding: 10px;
+        outline: none;
+        border: none;
+        width: 300px;
+        border: 1px solid #ccc;
+     }
+     input:autofill{
+        border: 2px solid red;
+     }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>:autofill</h1>
+    </center>
+    <hr>
+    <form autocomplete="on">
+        <label for="name">Enter name</label>
+        <input type="text" name="name" id="name" autocomplete="name"> <br>
+
+        <label for="name">Ph Number</label>
+        <input type="tel" name="mobile" id="mobile" autocomplete="mobile">
+    </form>
+</body>
+</html>

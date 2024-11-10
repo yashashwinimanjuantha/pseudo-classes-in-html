@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+}
+
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 100px, 200px, 0);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.slice-1 {
+    background-color: #FFA500;
+    transform: rotate(0deg) skew(60deg);
+}
+
+.slice-2 {
+    background-color: #FF4081;
+    transform: rotate(72deg) skew(60deg);
+}
+
+.slice-3 {
+    background-color: #7C4DFF;
+    transform: rotate(144deg) skew(60deg);
+}
+
+.slice-4 {
+    background-color: #4CAF50;
+    transform: rotate(216deg) skew(60deg);
+}
+
+.slice-5 {
+    background-color: #03A9F4;
+    transform: rotate(288deg) skew(60deg);
+}
+
+.labels {
+    margin-left: 30px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dot-1 {
+    background-color: #FFA500;
+}
+
+.dot-2 {
+    background-color: #FF4081;
+}
+
+.dot-3 {
+    background-color: #7C4DFF;
+}
+
+.dot-4 {
+    background-color: #4CAF50;
+}
+
+.dot-5 {
+    background-color: #03A9F4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Types of HTML Form Elements for Capturing User Data</h1>
+        <div class="chart-container">
+            <div class="pie-chart">
+                <div class="slice slice-1">01</div>
+                <div class="slice slice-2">02</div>
+                <div class="slice slice-3">03</div>
+                <div class="slice slice-4">04</div>
+                <div class="slice slice-5">05</div>
+            </div>
+            <div class="labels">
+                <div class="label">
+                    <span class="dot dot-1"></span> Text Input Fields
+                </div>
+                <div class="label">
+                    <span class="dot dot-2"></span> Radio Buttons
+                </div>
+                <div class="label">
+                    <span class="dot dot-3"></span> Checkboxes
+                </div>
+                <div class="label">
+                    <span class="dot dot-4"></span> Textarea
+                </div>
+                <div class="label">
+                    <span class="dot dot-5"></span> Select Boxes
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</ht

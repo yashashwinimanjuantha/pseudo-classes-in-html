@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #432371, #fa4a60);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #fa8d3c, #f76b1c);
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.facebook {
+    background: linear-gradient(135deg, #3b5998, #8b9dc3);
+    box-shadow: 10px 20px 30px  #3b5998;
+}
+
+.tumblr {
+    background: linear-gradient(135deg, #35465c, #596876);
+    box-shadow: 10px 20px 30px #596876;
+
+}
+
+.twitter {
+    background: linear-gradient(135deg, #1da1f2, #65b5f5);
+    box-shadow: 10px 20px 30px #1da1f2;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card facebook">
+            <i class="fab fa-facebook-f"></i>
+            <h2>Facebook</h2>
+        </div>
+        <div class="card tumblr">
+            <i class="fab fa-tumblr"></i>
+            <h2>Tumblr</h2>
+        </div>
+        <div class="card twitter">
+            <i class="fab fa-twitter"></i>
+            <h2>Twitter</h2>
+        </div>
+    </div>
+</body>
+</html>

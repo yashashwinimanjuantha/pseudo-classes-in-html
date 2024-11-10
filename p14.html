@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>/* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff416c, #008cff);
+        }
+        
+        .login-box {
+            background-color: #222;
+            padding: 40px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        
+        .textbox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .textbox input {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid #00bcd4;
+            outline: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .textbox input::placeholder {
+            color: #ccc;
+        }
+        
+        .forgot-password {
+            display: block;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: transparent;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-btn:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        } 
+        .social-media a:hover {
+            color: #00bcd4;
+        }
+        </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>LOGIN</h1>
+        <p>Please enter your login and password!</p>
+        <form>
+            <div class="textbox">
+                <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+        </div>
+    </div>
+</body>
+</html>
